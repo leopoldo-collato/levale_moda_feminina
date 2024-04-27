@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+
+    }
+
+    body {
+        margin: 0,
+    }
+
+    .topo {
+        background-color: rgb(241, 119, 186);
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu {
+        background-color: #6478fc;
+        overflow: hidden;
+    }
+
+    .menu a {
+        color: white;
+        padding: 14px 30px;
+        float: block;
+        text-decoration: none;
+    }
+
+    .coluna-50 {
+        float: left;
+        width: 50%;
+        padding: 10px;
+    }
+</style>
+</head>
+
+
+<body>
+    <!-- TAG SEMÂNTICA PARA TOPO (SUBSTITUI A TAG DIV) -->
+    <header class="topo">
+        <img src="../img/banner_levale.png">
+    </header>
+    <!-- TAG SEMANTICA PARA MENU(SUBSTITUI A TAG DIV) -->
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="loja.html">Loja</a>
+        <a href="contato.html">Contato</a>
+        <a href="sobre.html">Sobre</a>
+    </nav>
+    <!-- TAG SEMANTICA PARA COLUNAS(SUBSTITUI A TAG DIV) -->
+    <section class="coluna-50">
+        <h2>Coluna</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tempore nesciunt impedit assumenda,
+            autem
+            non illum laudantium accusantium aut explicabo laborum debitis ea, quos, facilis dolorem omnis enim
+            nulla!
+            Saepe.</p>
+    </section>
+
+    <section class="coluna-50">
+        <form action="arquivo.php" method="get">
+
+            <label for="campo_nome">Nome:</label>
+            <input id="campo_nome" type="text" placeholder="Digite seu nome aqui" required>
+            <br><br>
+
+            <label for="campo_e-mail">E-mail:</label>
+            <input id="campo_e-mail" type="email" placeholder="Digite seu e-mail" required>
+            <br><br>
+
+            <h2>Como ficou conhecendo nossa página?</h2>
+
+
+            <required>
+                <input id="iten1" type="checkbox" name="iten1" value="Internet">
+                <label for="iten1">Internet</label><br><br>
+
+                <input id="iten2" type="checkbox" name="iten2" value="Amigo">
+                <label for="iten2">Amigo</label><br><br>
+
+                <input id="iten3" type="checkbox" name="iten3" value="Instagran">
+                <label for="iten3">Instagran</label>
+            </required>
+            <br><br>
+
+
+
+
+            <select name="Tipo de mensagem" required>
+                <option selected disabled value="">Qual motivo do contato</option>
+
+                <option value="Dúvida">Dúvida</option>
+                <option value="Informação">Informação</option>
+                <option value="Reclamação">Reclamação</option>
+            </select>
+            <br>
+
+            <h2>Digite sua mensagem</h2>
+            <textarea required name="mensagem" placeholder="digite aque sua mensagem" rows="15" cols="55"></textarea>
+            <br><br>
+
+            <input type="submit" value="Enviar formulário">
+            <br><br>
+
+        </form>
+        <section class="coluna-50">
+            <!-- tag de áudio -->
+            <h2>Áudio local</h2>
+            <audio controls controlsList="nodownload">
+                <source src="audio/teste.mp3" type="audio/mpeg">
+            </audio>
+
+        </section>
+    </section>
+    <!-- TAG SEMANTICA PARA RODAPÉ(SUBSTITUI A TAG DIV) -->
+    <footer class="rodape">
+
+    </footer>
+
+
+</body>
+
+</html>
