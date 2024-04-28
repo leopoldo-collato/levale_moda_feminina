@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoções</title>
+</head>
+
+<body>
+
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 1, 0
+            }
+
+            .topo {
+                background-color: rgb(241, 119, 186);
+                padding: 10px;
+                text-align: center;
+            }
+
+            .menu {
+                background-color: #6478fc;
+                overflow: hidden;
+            }
+
+            .menu a {
+                color: white;
+                padding: 14px 15px;
+                float: block;
+                text-decoration: none;
+            }
+
+            .coluna-50 {
+                float: left;
+                width: 50%;
+                padding: 20px;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <!-- TAG SEMÂNTICA PARA TOPO (SUBSTITUI A TAG DIV) -->
+        <header class="topo">
+            <img src="./img/banner_levale.png">
+        </header>
+        <!-- TAG SEMANTICA PARA MENU(SUBSTITUI A TAG DIV) -->
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="loja.html">Loja</a>
+            <a href="promoçao.html">Promoções</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+
+        </nav>
+        <!-- TAG SEMANTICA PARA COLUNAS(SUBSTITUI A TAG DIV) -->
+        <section class="coluna-50">
+
+            <p>
+            <h1>
+                <hr>Aperte o play e ouça a rádio Alpha FM 101,7
+            </h1>
+            </hr>
+            </h1>
+
+            </p>
+            <audio controls controlsList="nodownload">
+                <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ALPHAFM_ADP.aac"
+                    type="audio/mpeg">
+            </audio>
+            <hr>
+        </section>
+
+        <section class="coluna-50">
+            <p>
+            <h1>
+                <hr>Acervo de vídeos com nossas promoções</hr>
+                <hr>
+            </h1>
+            </p>
+            <p>
+            <h2>Vídeo 1</h2>
+            </p>
+            <video width="700" height="300" controls controlsList="nodownload">
+                <source src="./video/video2.mp4" type="video/mp4">
+            </video>
+
+
+
+            <section class="coluna-50">
+                <p>
+                <h2>Vídeo 2</h2>
+                </p>
+                <video width="700" height="300" controls controlsList="nodownload">
+                    <source src="./video/video1.mp4" type="video/mp4">
+                </video>
+            </section>
+
+
+            <br><br><br><br>
+
+
+
+
+
+            <!-- TAG SEMANTICA PARA RODAPÉ(SUBSTITUI A TAG DIV) -->
+            <footer class="rodape">
+                <p>teste</p>
+            </footer>
+
+
+    </body>
+
+</html>
