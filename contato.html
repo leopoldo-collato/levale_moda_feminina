@@ -72,55 +72,46 @@
         </h1>
         </p>
     </section>
-    <!--metodo teste <form action="envia_fale.php" method="post" name="form"
-    >
-    metodo oficial<form action="formulario.php" method="get"> -->
-    <section class="coluna-50">
-        <form action="formulario.php" method="post" name="form">
 
-            <label for="campo_nome">Nome:</label>
+    <section class="coluna-50">
+        <form action="https://formsubmit.co/lcollato@gmail.com" method="POST">
+            <h4>Digite seu nome</h4>
+            <input type="text" placeholder="Digite seu nome aqui" name="name" required />
+            <h4>Digite seu e-mail</h4>
+            <input type="email" name="email" placeholder="Digite seu e-mail aqui" required />
+            <h4>Digite sua mensagem</h4>
+            <textarea required name="mensagem" placeholder="digite aque sua mensagem" rows="15" cols="55"></textarea>
+            <imput type="hidden" name="_captcha" value="false" />
+            <imput type="hidden" name="_next" value="./obrigado.html" />
+            <button type="submit">Enviar mensagem</button>
+        </form>
+    </section>
+
+
+
+    <!-- Anotações
+            <label for="campo_nome">Nome:</label> 
             <input id="campo_nome" type="text" placeholder="Digite seu nome aqui" required>
             <br><br>
-
             <label for="campo_e-mail">E-mail:</label>
             <input id="campo_e-mail" type="email" placeholder="Digite seu e-mail" required>
             <br><br>
-
-            <h2>Como ficou conhecendo nossa página?</h2>
-
-
-            <required>
-                <input id="iten1" type="checkbox" name="iten1" value="Internet">
-                <label for="iten1">Internet</label><br><br>
-
-                <input id="iten2" type="checkbox" name="iten2" value="Amigo">
-                <label for="iten2">Amigo</label><br><br>
-
-                <input id="iten3" type="checkbox" name="iten3" value="Instagran">
-                <label for="iten3">Instagran</label>
-            </required>
-            <br><br>
-
-
-
-
             <select name="Tipo de mensagem" required>
                 <option selected disabled value="">Qual motivo do contato</option>
-
                 <option value="Dúvida">Dúvida</option>
                 <option value="Informação">Informação</option>
                 <option value="Reclamação">Reclamação</option>
             </select>
             <br>
 
-            <h2>Digite sua mensagem (teste)</h2>
+            <h2>Digite sua mensagem</h2>
             <textarea required name="mensagem" placeholder="digite aque sua mensagem" rows="15" cols="55"></textarea>
             <br><br>
 
             <input type="submit" value="Enviar formulário">
             <br><br>
 
-        </form>
+        </form>-->
 
     </section>
 
