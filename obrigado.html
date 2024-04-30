@@ -7,10 +7,83 @@
     <title>Obrigado</title>
 </head>
 
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background-color: rgb(131, 127, 174);
+            margin: 1, 0;
+        }
+
+        .topo {
+            background-color: rgb(250, 250, 75);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu {
+            background-color: #6478fc;
+            overflow: hidden;
+        }
+
+        .menu a {
+            color: white;
+            padding: 14px 10px;
+            float: block;
+            text-decoration: none;
+        }
+
+        .coluna-50 {
+            color: white;
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .info-contato {
+            text-align: left;
+            color: white;
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .titulo {
+            color: white;
+            float: left;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+
 <body>
-    <h1>Obrigado pela mensagem</h1>
-    <p>Nossa equipe recebeu sua mensagem e irá responder o mais breve possível.</p>
-    <p>Estamos à disposição.</p>
+    <!-- TAG SEMÂNTICA PARA TOPO (SUBSTITUI A TAG DIV) -->
+    <header class="topo">
+        <img width="100%" src="./img/banner_levale.png">
+    </header>
+    <!-- TAG SEMANTICA PARA MENU(SUBSTITUI A TAG DIV) -->
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="loja.html">Loja</a>
+        <a href="promoçao.html">Promoções</a>
+        <a href="contato.html">Contato</a>
+        <a href="sobre.html">Sobre</a>
+    </nav>
+    <section class="titulo">
+        <h1>Obrigado pela mensagem</h1>
+        <p>
+        <h2>Nossa equipe recebeu sua mensagem e irá responder o mais breve possível.</p>
+            <p>Estamos à disposição.
+        </h2>
+        </p>
+    </section>
 
 </body>
 
