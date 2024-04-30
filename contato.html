@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/fivicon_levalco60x60.png" type="image/x-icon">
     <title>Contato</title>
 
 </head>
@@ -16,12 +17,12 @@
         }
 
         body {
-            background-color: blueviolet;
+            background-color: rgb(131, 127, 174);
             margin: 1, 0
         }
 
         .topo {
-            background-color: rgb(241, 119, 186);
+            background-color: rgb(250, 250, 75);
             padding: 10px;
             text-align: center;
         }
@@ -80,13 +81,22 @@
 
     <section class="coluna-50">
         <form action="https://formsubmit.co/victoriacollato.tricot@gmail.com" method="POST">
+
             <h1>ou pela nossa caixa de mensagem:</h1>
 
             <input type="text" placeholder="Nome Completo" name="name" required />
             <br><br>
+            <input type="email" name="email" placeholder="e-mail" required />
+            <br><br>
             <input type="tel" placeholder="Telefone" id="Telefone" name="Telefone" required />
             <br><br>
-            <input type="email" name="email" placeholder="e-mail" required />
+            <select name="Tipo de mensagem" required>
+                <option selected disabled value="">Qual motivo do contato</option>
+
+                <option value="Dúvida">Dúvida</option>
+                <option value="Informação">Informação</option>
+                <option value="Reclamação">Reclamação</option>
+            </select>
             <br><br>
             <textarea required name="mensagem" placeholder="digite aqui sua mensagem" rows="15" cols="35"></textarea>
             <br>
